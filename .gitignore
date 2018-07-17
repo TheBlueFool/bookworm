@@ -78,3 +78,6 @@ pip-selfcheck.json
 /.idea/emacs.xml
 /.idea/misc.xml
 /.idea/garden.iml
+/.idea/bookworm.iml
+/.idea/modules.xml
+/.idea/vcs.xml
