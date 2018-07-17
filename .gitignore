@@ -77,7 +77,6 @@ pip-selfcheck.json
 /.idea/markdown-navigator/profiles_settings.xml
 /.idea/emacs.xml
 /.idea/misc.xml
-/.idea/garden.iml
 /.idea/bookworm.iml
 /.idea/modules.xml
 /.idea/vcs.xml
