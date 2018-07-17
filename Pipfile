@@ -7,6 +7,15 @@ name = "pypi"
 flask = "*"
 
 [dev-packages]
+debtcollector = "*"
+future = "*"
+pytest = "*"
+"flake8" = "*"
+pylint = "*"
+yamllint = "*"
+tox = "*"
+sphinx = "*"
+pytest-xdist = "*"
 
 [requires]
 python_version = "3.7"
