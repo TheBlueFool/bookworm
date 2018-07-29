@@ -10,12 +10,21 @@ flask = "*"
 debtcollector = "*"
 future = "*"
 pytest = "*"
-"flake8" = "*"
-pylint = "*"
-yamllint = "*"
-tox = "*"
+flake8 = ">=3.5.0"
+pylint = ">=2.0.0"
+yamllint = ">=1.11.0"
+tox = ">=3.0.0"
 sphinx = "*"
-pytest-xdist = "*"
+pytest-xdist = ">=1.22.0"
+doubles = "*"
+pytest-watch = ">=4.2.0"
+black = "==18.6b4"
+isort = "*"
+semver = "*"
+coverage = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true
