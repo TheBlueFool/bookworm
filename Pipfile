@@ -5,6 +5,11 @@ name = "pypi"
 
 [packages]
 flask = "*"
+flask-restful = "*"
+sqlalchemy = "*"
+flask-sqlalchemy = "*"
+redis = "*"
+python-dotenv = "*"
 
 [dev-packages]
 debtcollector = "*"
@@ -22,6 +27,8 @@ black = "==18.6b4"
 isort = "*"
 semver = "*"
 coverage = "*"
+selenium = "*"
+pytest-flask = "*"
 
 [requires]
 python_version = "3.6"

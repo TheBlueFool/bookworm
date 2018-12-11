@@ -1,7 +1,0 @@
-include LICENSE
-include src/flaskr/schema.sql
-include tox.ini
-graft src/flaskr/static
-graft src/flaskr/templates
-graft tests
-global-exclude *.pyc
