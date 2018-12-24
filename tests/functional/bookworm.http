@@ -1,8 +1,8 @@
-GET http://localhost:5000/health
+GET http://localhost:5000/api/v0/health
 Accept: application/json
 ###
 
-GET http://localhost:5000/plays/play1
+GET http://localhost:5000/api/v0/plays/play1
 Accept: application/json
 
 ###

@@ -1,22 +1,19 @@
-from flask import request, Blueprint
+from flask import Blueprint
 from flask_restful import Resource, abort
+
+from resources.data import plays_full_list
 
 plays_bp = Blueprint('api', __name__)
 
 
-plays = {
-    'play1': {'name': 'A Winters Tale'},
-    'play2': {'task': '?????'},
-    'play3': {'task': 'Some Fucking Sonnet'},
-}
-
 def abort_if_todo_doesnt_exist(play_id):
-    if play_id not in plays:
+    if play_id not in plays_full_list:
         abort(404, message="Todo {} doesn't exist".format(play_id))
+
 
 class PlaySimple(Resource):
     def get(self, play_id):
-        return {play_id: plays[play_id]}
+        return {play_id: plays_full_list[play_id]}
 
     # def put(self, play_id):
     #     plays[play_id] = request.form['data']
