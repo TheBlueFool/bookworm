@@ -14,3 +14,12 @@ def test_can_start_a_list_and_retrieve_it_later(live_server, browser):
     browser.get(play_url)
     assert 'Tale' in browser.page_source
     # fail('Finish the test!')
+
+
+def test_can_submit_word_and_get_its_occurences_test(live_server, browser):
+    # Edith has heard about a cool new online to-do app. She goes
+    # to check out its homepage
+    play_url = url_for('wordsimple', word_target='thine', _external=True)
+    browser.get(play_url)
+    assert 'places' in browser.page_source
+    # fail('Finish the test!')

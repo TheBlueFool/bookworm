@@ -21,6 +21,11 @@ def create_app(test_config=None):
     from bookworm.resources.health_api import configure_health
     configure_health(app, api_v0)
 
+    from bookworm.resources.words import configure_words
+    configure_words(app, api_v0)
+
+
+
     # apply the blueprints to the app
     # from bookworm import hello
     # app.register_blueprint(hello.bp)
