@@ -1,7 +1,7 @@
 from flask import Blueprint
 from flask_restful import Resource, abort
 
-from .data import words_full_list
+from common.data import words_full_list
 
 words_bp = Blueprint('words_bp', __name__)
 
